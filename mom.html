@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hapi biorzdai</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: pink;
+            filter: drop-shadow(0 0 10px #ff3e60)
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        img {
+            width: 250px;
+            aspect-ratio: 1;
+            object-fit:fill;
+            --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+            -webkit-mask-box-image: var(--_m);
+                        mask-border: var(--_m);
+            clip-path: polygon(-41% 0,50% 91%, 141% 0);
+        }
+
+        @supports not (-webkit-mask-box-image: var(--_m)) { 
+            img {
+            --_m:
+                radial-gradient(at 70% 31%,#000 29%,#0000 30%),
+                radial-gradient(at 30% 31%,#000 29%,#0000 30%),
+                linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+            -webkit-mask: var(--_m);
+                    mask: var(--_m);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>з днем народження мамо!!!</h1>
+    <div class="content">
+        <img src="photo_2024-11-15_14-55-31.jpg" alt="dima" style="width: 50%;;">
+    </div>
+    <h2>найкращій мамі від улюбленого сина</h2>
+</body>
+</html>
